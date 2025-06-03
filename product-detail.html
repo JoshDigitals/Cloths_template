@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail - Salehub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header section from other pages -->
+  <header class="header">
+    <!-- Same header content as other pages -->
+  </header>
+
+  <div class="product-detail-container">
+    <div class="product-gallery">
+      <div class="main-image">
+        <img src="" alt="" id="product-main-image">
+        <button class="zoom-btn"><i class="fas fa-search-plus"></i></button>
+      </div>
+      <div class="thumbnail-images">
+        <!-- Thumbnails will be populated by JavaScript -->
+      </div>
+    </div>
+    
+    <div class="product-info">
+      <h1 id="product-title"></h1>
+      <div class="product-rating">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span class="rating-count">(24 reviews)</span>
+      </div>
+      <div class="product-price">
+        <span class="current-price" id="product-price"></span>
+        <span class="old-price" id="product-old-price"></span>
+      </div>
+      
+      <div class="product-description" id="product-description">
+      </div>
+      
+      <div class="product-options">
+        <div class="color-selection">
+          <h3>Color</h3>
+          <div class="color-options" id="color-options">
+            <!-- Colors will be populated by JavaScript -->
+          </div>
+        </div>
+        
+        <div class="size-selection">
+          <h3>Size</h3>
+          <div class="size-options" id="size-options">
+            <!-- Sizes will be populated by JavaScript -->
+          </div>
+        </div>
+        
+        <div class="quantity-selection">
+          <h3>Quantity</h3>
+          <div class="quantity-controls">
+            <button class="quantity-decrease">-</button>
+            <input type="number" value="1" min="1" max="10" id="quantity">
+            <button class="quantity-increase">+</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="product-actions">
+        <button class="btn-primary add-to-cart">Add to Cart</button>
+        <button class="btn-outline add-to-wishlist">
+          <i class="far fa-heart"></i>
+          Add to Wishlist
+        </button>
+      </div>
+      
+      <div class="product-meta">
+        <div class="meta-item">
+          <i class="fas fa-truck"></i>
+          <span>Free shipping on orders over $75</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-undo"></i>
+          <span>30-day return policy</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-shield-alt"></i>
+          <span>Secure checkout</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-details-tabs">
+    <div class="tabs-header">
+      <button class="tab-btn active" data-tab="description">Description</button>
+      <button class="tab-btn" data-tab="details">Details</button>
+      <button class="tab-btn" data-tab="reviews">Reviews</button>
+    </div>
+    
+    <div class="tab-content active" id="description">
+      <!-- Description content will be populated by JavaScript -->
+    </div>
+    
+    <div class="tab-content" id="details">
+      <!-- Details content will be populated by JavaScript -->
+    </div>
+    
+    <div class="tab-content" id="reviews">
+      <!-- Reviews will be populated by JavaScript -->
+    </div>
+  </div>
+
+  <div class="related-products">
+    <h2>You May Also Like</h2>
+    <div class="products-grid">
+      <!-- Related products will be populated by JavaScript -->
+    </div>
+  </div>
+
+  <!-- Image zoom modal -->
+  <div class="zoom-modal">
+    <button class="close-zoom"><i class="fas fa-times"></i></button>
+    <img src="" alt="" id="zoomed-image">
+  </div>
+
+  <!-- Footer section from other pages -->
+  <footer class="footer">
+    <!-- Same footer content as other pages -->
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/product-detail.js"></script>
+</body>
+</html>
